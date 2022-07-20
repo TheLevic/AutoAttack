@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "autoattack",
+  "version": "${version}",
+
+  "name": "Auto Attack",
+  "description": "This mod will automatically attack living entities.",
+  "authors": [
+    "TheLevic"
+  ],
+  "contact": {
+    "homepage": "www.levicverse.com",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/autoattack/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.thelevic.autoattack.AutoAttack"
+    ]
+  },
+  "mixins": [
+    "autoattack.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
